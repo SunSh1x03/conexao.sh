@@ -1,4 +1,6 @@
 #!/bin/bash
+#Script criado por:Filipe Penido
+#Revisado por: Matheus Brandão
 while true
 ipaddr=8.8.8.8
 hostname=google.com
