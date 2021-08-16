@@ -1,0 +1,51 @@
+#!/bin/bash
+while true
+ipaddr=8.8.8.8
+hostname=google.com
+do
+	clear
+	echo "[?] ping $ipaddr"
+	ping 8.8.8.8 -c 1
+	if [ $? != 0 ]; then
+		echo ""
+		echo "[=/] Ainda na merda meu irmão!"
+		numero1=0
+     	else
+		echo ""
+		echo "[=)] Deu bom!"
+		numero1=1
+	fi
+		
+	sleep 3
+	
+	echo ""
+	echo "[?] ping $hostname"
+	ping www.google.com.br -c 1
+	if [ $? != 0 ]; then
+		echo ""
+		echo "[=/] Ainda na merda meu irmão!"
+		numero2=0
+     	else
+		echo ""
+		echo "[=)] Deu bom!"
+		numero2=1
+	fi
+
+	sleep 3
+	numero=$(($numero1+$numero2))
+	if [ $numero == 2 ]; then
+		echo "[ * ] GRAÇAS A DEUS!!!!!!"
+		break
+	fi
+	sleep 3
+
+	echo ""
+	echo "[!] Deu ruim, sem internet brother!!!"
+	sleep 3
+	clear
+
+	
+	echo "[!] Vamos testar novamente..."
+	sleep 3;
+	clear
+done
