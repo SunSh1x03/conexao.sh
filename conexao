@@ -9,7 +9,7 @@ while true
 do
 	clear
 	echo "[?] ping $ipaddr"
-	ping 8.8.8.8 -c 1
+	ping 8.8.8.8
 	if [ $? != 0 ]; then
 		echo ""
 		echo "[=/] Ainda na merda meu irmão!"
@@ -24,7 +24,7 @@ do
 	
 	echo ""
 	echo "[?] ping $hostname"
-	ping www.google.com.br -c 1
+	ping www.google.com.br
 	if [ $? != 0 ]; then
 		echo ""
 		echo "[=/] Ainda na merda meu irmão!"
