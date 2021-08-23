@@ -38,6 +38,7 @@ do
 	sleep 3
 	numero=$(($numero1+$numero2))
 	if [ $numero == 2 ]; then
+		echo ""
 		echo "[ * ] GRAÇAS A DEUS!!!!!!"
 		break
 	fi
