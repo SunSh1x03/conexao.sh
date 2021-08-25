@@ -1,2 +1,2 @@
-## Script para testar comunicação com a internet.
+## Script - testa a comunicação com a internet.
 *Feito para estudo.*
