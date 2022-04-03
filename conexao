@@ -1,6 +1,7 @@
 #!/bin/bash
 #Script criado por:Filipe Penido
 #Revisado por: Matheus Brandão
+#Atualizado 03/04/2022
 
 ipaddr=8.8.8.8
 hostname=google.com
